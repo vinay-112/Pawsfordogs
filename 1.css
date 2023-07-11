@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: rgb(165, 146, 144);
+  font-family: "Permanent Marker", cursive;
+  background-image: url("https://images.unsplash.com/photo-1444212477490-ca407925329e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80")  ;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: rgb(31, 23, 24);
+  font-size: 30px;
+}

@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.container {
+    position: relative;
+    background: #aad5f6;
+    height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.slide-1 {
+    background: url("https://images.unsplash.com/photo-1518717758536-85ae29035b6d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+    background-size: cover;
+}
+
+.slide-2 {
+    background: url("https://media.istockphoto.com/id/676313566/photo/girl-petting-the-dog.jpg?s=612x612&w=0&k=20&c=jtFnOOqGIvkJ67-zzc_Rm0opA0M8FeF0AB0oQvq4X40=" );
+}
+.slide-3 {
+    background : url("https://media.istockphoto.com/id/1126645464/photo/happy-smiling-woman-with-her-pack-of-dogs-in-tropical-garden.jpg?s=612x612&w=0&k=20&c=ZUacgLpSk6vOhWr1ws6HfIXRsUDUArazWgoMJ7JOlao=");
+    background-size: cover;
+}
+
+.slide-4 {
+    background: url("https://images.unsplash.com/photo-1494947665470-20322015e3a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+    
+}
+.slide-5 {
+    background: url("https://images.unsplash.com/photo-1556866261-8763a7662333?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGRvZ3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+.slide-6 {
+    background: url("https://plus.unsplash.com/premium_photo-1668114375111-e90b5e975df6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80");
+}
+.slide-7 {
+    background: url("https://images.unsplash.com/photo-1544568100-847a948585b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80");
+}
+.slide-8 {
+    background: url("https://media.istockphoto.com/id/187914926/photo/woman-and-her-dog-shaking-hands-silhouette.jpg?s=612x612&w=0&k=20&c=DHAbxMwslYPwLulIiE3r7X2Fdcw7HMTJP40lb2fWRso=");
+}
+.slide-9 {
+    background: url("https://images.unsplash.com/photo-1523480717984-24cba35ae1ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fGRvZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+.slide-10 {
+    background: url("https://w0.peakpx.com/wallpaper/324/633/HD-wallpaper-2019-john-wick-3-movie-halle-berry.jpg");
+}
+
+
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 100;
+    background: rgba(0, 0, 0, .1);
+    border-radius: 50%;
+    transform: background 500ms;
+}
+.arrow img {
+    width: 50px;
+}
+.arrow:hover {
+    background: rgba(0, 0, 0, .4);
+}
+.l {
+    left: 0;
+}
+.r {
+    right: 0;
+}

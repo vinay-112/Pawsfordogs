@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+.content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+  color: #fff;
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+}
+img{
+  width: 70px;
+border: 2px solid rgb(15, 14, 14);
+border-radius: 50%;
+}
+.navbar.sticky{
+  background: rgb(0, 14, 90);
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(88, 23, 23, 0.1);
+}
+
+
+.navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a{
+  color: #df0b0b;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navbar .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+}
+.menu-list li a{
+  color: rgb(185, 4, 110);
+  font-size: 18px;
+  font-weight: 800;
+  margin-left: 25px;
+  border:1px solid rgba(49, 4, 138, 0.88);
+  border-radius:2px ;
+	cursor: pointer;
+  padding:5px;
+  box-shadow:0px 0.5px 5px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+  background:rgba(12, 17, 1, 0.4);
+  color: white;
+}
+.banner{
+  background: url("https://images.wallpaperscraft.com/image/single/dog_run_grass_93303_1280x720.jpg") no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.about{
+  padding: 30px 0;
+}
+.about .title{
+  font-size: 45px;
+  font-weight: 800;
+}
+.about p{
+  padding-top: 30px;
+  text-align: justify;
+  font-size: 20px;
+  font-family: system-ui,  'Helvetica Neue', sans-serif;
+  font-weight: 720;
+  letter-spacing: 2px;
+
+  color: rgb(223, 238, 236);
+}
+.icon{
+  color: rgb(208, 146, 240);
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+.about .color{
+  color: rgb(153, 201, 57);
+}
+.about{
+  background-image: url("https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1501471984908-815b996862f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+
+}
+
+.card{
+    width: 250px;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 20px;
+    transition: all .3s ease-in;
+}
+.card > *{
+    padding: 10px;
+}
+.card .card-image{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;    
+}
+.card .card-title{
+    padding: 20px 10px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-shadow: 1px 0px 2px #121213;
+}
+.card:nth-child(1) .card-image{
+    background-image: url("https://thumbs.dreamstime.com/b/save-dog-logo-posters-available-cdr-ai-format-save-dog-logo-posters-138817486.jpg");
+}
+
+.card:hover{
+    background: rgb(7, 7, 7);
+    color: rgb(230, 217, 217);
+    box-shadow: 0px 0px 11px 5px #0a0a0a;
+
+}
+
+.card .card-text{
+    line-height: 20px;
+    font-size: 400;
+}
+
+
+@media (max-width: 1230px) {
+  .content{
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content{
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content{
+    padding: 0 30px;
+  }
+}
+@media (max-width: 868px) {
+  body.disabled{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: #222;
+    transition: all 0.3s ease;
+  }
+  .navbar.show .menu-list{
+    left: 0%;
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list li a{
+    margin-left: 0px;
+  }
+}
+@media (max-width: 380px) {
+  .navbar .logo a{
+    font-size: 27px;
+  }
+}
